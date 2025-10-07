@@ -12,7 +12,7 @@ from easyeda2kicad.kicad.parameters_kicad_symbol import KicadVersion, sanitize_f
 
 sym_lib_regex_pattern = {
     "v5": r"(#\n# {component_name}\n#\n.*?ENDDEF\n)",
-    "v6": r'\n  \(symbol "{component_name}".*?\n  \)',
+    "v6": r'\n\s+\(symbol "{component_name}".*?\n  \)',
     "v6_99": r"",
 }
 
